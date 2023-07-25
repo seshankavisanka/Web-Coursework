@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Quiz-App</title>
+    <link rel="stylesheet" href="header.css" />
+
+    <link rel="stylesheet" href="style/quiz-app.css" />
+  </head>
+  <body>
+
+    <!-- rule box -->
+    <div class="container">
+      <div class="rule-box">
+        <div class="rule-title"><span>Rules</span></div>
+        <div class="rule-list">
+          <div class="rule">
+            Once you select your answer, it can't be undone.
+          </div>
+          <div class="rule">
+            You can't exit from the Quiz while you're playing.
+          </div>
+          <div class="rule">
+            You'll get points on the basis of your correct answers.
+          </div>
+          <div class="rule">
+            <span>Play now & Win.</span>
+          </div>
+        </div>
+        <div class="buttons">
+          <button class="quit" id="closebutton">Exit Quiz</button>
+          <button class="restart">Continue</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quiz Box -->
+    <div class="quiz_box">
+      <header>
+        <div class="title">Start Quiz</div>
+        <div class="timer">
+          <div class="time_left_txt">Time</div>
+          <div class="timer_sec">0</div>
+        </div>
+        <div class="time_line"></div>
+      </header>
+      <section>
+        <div class="quetion_text"></div>
+        <div class="answer_list"></div>
+      </section>
+
+      <!-- footer of Quiz Box -->
+      <footer>
+        <div class="total_que"></div>
+        <button class="next_button">Next Que</button>
+      </footer>
+    </div>
+
+    <!-- Result Box -->
+    <div class="result_box">
+      <div class="icon">
+        <i class="fas fa-crown"></i>
+      </div>
+      <div class="complete_text">You've completed the Quiz!</div>
+      <div class="score_text"></div>
+      <div class="buttons">
+        <button class="restart">Replay Quiz</button>
+        <button class="quit">Quit Quiz</button>
+      </div>
+    </div>
+
+    <script src="javaScript/script.js"></script>
+    <script src="javaScript/quiz-app.js"></script>
+    <script src="javaScript/questions.js"></script>
+  </body>
+</html>

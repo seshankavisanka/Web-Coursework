@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Lumanosimo&family=Playfair+Display:wght@400;700;900&display=swap");
+
+* {
+  text-transform: capitalize;
+  outline: none;
+  text-decoration: none;
+  transition: all 0.2s linear;
+}
+
+body {
+  margin: 50px 100px;
+  background-color: antiquewhite;
+  text-align: center;
+}
+
+.page-editor-page .header {
+  background-color: #0088ff;
+  font-family: "Playfair Display", serif;
+  font-size: 40px;
+  font-weight: 900;
+  color: #ffffff;
+}
+
+.page-editor-page .name,
+.page-editor-page .name .details {
+  font-size: 18px;
+}
+
+.page-editor-page .name .details {
+  font-family: "Lumanosimo", cursive;
+  color: chocolate;
+  font-weight: bold;
+}
+
+.page-editor-page .body {
+  background: #0088ff;
+  padding: 50px;
+}

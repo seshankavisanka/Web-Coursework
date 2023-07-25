@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Lugrasimo&family=Roboto+Condensed&family=VT323&display=swap");
+
+* {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: all 0.2s linear;
+}
+
+body {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.top-of-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-of-page .box {
+  margin-top: -150px;
+  width: 1200px;
+  height: 200px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  background: #ffffffde;
+}
+
+.top-of-page .box .text {
+  text-align: center;
+}
+
+.top-of-page .box .text p {
+  margin-top: 25px;
+  font-size: 100px;
+  font-family: "Lugrasimo", cursive;
+  font-weight: bold;
+  color: #feac15e7;
+}
+
+.top-image {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.top-image img {
+  height: 250px;
+  border-radius: 20px;
+}
+
+.top-image img:hover {
+  opacity: 0.7;
+}
+
+.history table,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.history .paragraph p {
+  font-size: 18px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.history .image-name {
+  opacity: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "VT323", monospace;
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+}
+
+.page-editor-box {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.page-editor-box .page-editor {
+  display: inline;
+  padding: 5px;
+  background: #00ff00;
+  font-size: 12px;
+}
+
+.page-editor-box .page-editor a {
+  font-weight: bold;
+}
+
+.page-editor-box .page-editor a:hover {
+  text-decoration: underline;
+}

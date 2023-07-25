@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-image: url(image/wallpaper-home.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+::selection {
+  color: #fff;
+  background: #ffffff;
+}
+
+.start-quiz {
+  width: 10000px;
+  height: 740px;
+  background-color: rgba(0, 0, 0, 0.402);
+  padding: 20px;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+.quiz-image {
+  width: 400px;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 35px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h3 {
+  color: #00ff00;
+  font-size: 20px;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.start-button {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.start-button button {
+  font-size: 25px;
+  font-weight: 500;
+  color: #009a08;
+  font-weight: 900;
+  padding: 15px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.start-button button:active {
+  transform: scale(0.96);
+}
+
+.page-editor-box {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.page-editor-box .page-editor {
+  display: inline;
+  padding: 5px;
+  background: #00ff00;
+  font-size: 12px;
+}
+
+.page-editor-box .page-editor a {
+  font-weight: bold;
+}
+
+.page-editor-box .page-editor a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    font-family: "Raleway", sans-serif;
+    background: #000611;
+}
+.head{
+    margin-top: 100px;
+    margin-bottom: 70px;
+}
+h1{
+    text-align: center;
+    color: #b5cce4;
+    font-size: 36px;
+    padding: 20px 0;
+    
+}
+.intro{
+    color: #F0FFFF;
+    padding: 20px;
+    font-size: 18px;
+    text-align: center;
+    margin: 10px auto;
+}
+.line {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.img {
+    background: #2a1f7a31;
+    position: relative;
+    flex: 0 0 calc(33.33% - 40px);
+    max-width: calc(33.33% - 40px);
+    height: 450px;
+    margin: 20px;
+    overflow: hidden;
+}
+.img img{
+    opacity: 0.8;
+    height: 100%;
+    width: 100%;
+    position: center;
+    vertical-align: center;
+    object-fit: cover;
+    transition: 0.6s;
+    transition-property: opacity;
+}
+.img:hover img{
+    opacity: 0.5;
+}
+.img .content{
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #bbc4c7d4;
+    width: 100%;
+    height: 100%;
+}
+.img .content h2{
+    text-align: center;
+    color: #070808ea;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-top: 70px;
+    transition: 0.4s;
+    transition-property: transform;
+}
+.img .content h2 span{
+    font-weight: 900;
+}
+.img:hover .content h2{
+    transform: translateY(-30px);
+}
+.img .content p{
+    margin: 30px 30px 0 30px;
+    color: #bbc4c7d4;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    opacity: 0;
+    transition: 0.6s;
+    transition-property: opacity, transform;
+}
+.img:hover .content p{
+    opacity: 1;
+    transform: translateY(-40px);
+}
+.conclusion{
+    color: #F0FFFF;
+    padding: 20px;
+    font-size: 18px;
+    text-align: center;
+    margin: 10px auto;
+}
+
+button {
+    border: navajowhite;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+}
+.centerBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+footer {
+    background-color: #ffffffd3;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+.footer-button {
+    background-color: #081626;
+    margin-left: 1000px;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}

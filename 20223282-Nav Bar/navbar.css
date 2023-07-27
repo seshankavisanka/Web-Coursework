@@ -1,0 +1,138 @@
+/* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500&family=Nunito:wght@200;300;400;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,500&family=Oswald:wght@200;300;500;600&family=Pacifico&family=Roboto+Slab:wght@200;300;400&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+:root {
+    --green: #28e4e4f1;
+}
+
+*::selection {
+    background: var(--green);
+    color: #07daac;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
+}
+
+/* Header Section Styles */
+.heading {
+    text-align: center;
+    padding: 2.5rem 0;
+}
+
+.heading span {
+    font-size: 2.5rem;
+    background: var(--green);
+    border-radius: 0.8rem;
+    padding: 0.2rem 1rem;
+    display: inline-block;
+}
+
+.heading span.space {
+    background: none;
+}
+
+.feedbak-header span {
+    font-size: 2.5rem;
+    background: var(--green);
+    border-radius: 0.8rem;
+    padding: 0.2rem 1rem;
+    display: inline-block;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to right, rgb(110, 201, 198), rgb(38, 224, 69));
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+}
+
+header .logo {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #ffff;
+    text-transform: capitalize;
+}
+
+header .logo span {
+    color: rgb(119, 0, 255);
+}
+
+header .navbar a {
+    color: #ffff;
+    font-size: 2.1rem;
+    margin: 0 .8rem;
+}
+
+header .navbar a:hover {
+    color: rgb(2, 144, 238);
+}
+
+header .icons i {
+    font-size: 2.3rem;
+    color: #ffff;
+    cursor: pointer;
+    margin-right: 2rem;
+}
+
+header .icons i:hover {
+    color: var(--green);
+}
+
+header .search-bar-container {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding: 1.5rem 2rem;
+    background: #333333;
+    border-top: .1rem solid rgba(255, 255, 255, .2);
+    display: flex;
+    align-items: center;
+    z-index: 1001;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+
+header .search-bar-container.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+header .search-bar-container #search-bar {
+    width: 100%;
+    padding: 1rem;
+    text-transform: none;
+    color: #161616e1;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+}
+
+header .search-bar-container label {
+    font-size: 3rem;
+    color: #ffff;
+    cursor: pointer;
+    margin-left: 1.5rem;
+}
+
+header .search-bar-container label:hover {
+    color: var(--green);
+}

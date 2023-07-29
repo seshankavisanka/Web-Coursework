@@ -44,7 +44,9 @@ let products = [
         id: 4,
         name: 'Gurula Deamon',
         image: 'imgs/deamons/gurulaDeamon.png',
-        price: 40
+        price: 40,
+        quantity:0
+
     },
     {
         id: 5,
@@ -114,9 +116,10 @@ let listCards  = [];
 
 function addToCard(key){
         // copy product form list to list card
-        listCards.push(JSON.parse(JSON.stringify(products[key])))
-        listCards[key].quantity = 1;
-    
+        if(!listCards.includes(products[key])){
+            listCards.push(JSON.parse(JSON.stringify(products[key])))
+            listCards[key].quantity = 1;
+        }
     reloadCard();
 }
 function reloadCard(){
@@ -141,11 +144,7 @@ function reloadCard(){
         }
     })
     total.innerText = totalPrice.toLocaleString();
-    if(count >= 0){
-        quantity.innerText = count;
-    }else{
-        quantity.innerText = 0;
-    }
+    quantity.innerText = count;
 }
 function changeQuantity(key, quantity){
     if(quantity == 0){

@@ -12,7 +12,7 @@ document.getElementById("block3").addEventListener("click",function(){
 })
 
 document.getElementById("block4").addEventListener("click",function(){
-    document.location.href ="";
+    document.location.href ="20223221-feedback.html";
 })
 
 document.getElementById("block5").addEventListener("click",function(){

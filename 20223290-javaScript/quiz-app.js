@@ -141,11 +141,9 @@ function showQuetions(index) {
 
 let counter;
 let counterLine;
-let total_time = 0;
 
 function answerselected(answer) {
   clearInterval(counter);
-  clearInterval(counterLine);
   let userAnswer = answer.textContent;
   let correctAnswer = questions[question_count].answer;
   const allanswers = answer_list.children.length;
@@ -153,16 +151,12 @@ function answerselected(answer) {
   if (userAnswer == correctAnswer) {
     userScore += 1;
     answer.classList.add("correct");
-    answer.insertAdjacentHTML("beforeend", tickIconTag);
   } else {
     answer.classList.add("incorrect");
-    answer.insertAdjacentHTML("beforeend", crossIconTag);
 
     for (i = 0; i < allanswers; i++) {
       if (answer_list.children[i].textContent == correctAnswer) {
         answer_list.children[i].setAttribute("class", "answer correct");
-        answer_list.children[i].insertAdjacentHTML("beforeend", tickIconTag);
-        console.log("Auto selected correct answer.");
       }
     }
   }
@@ -190,13 +184,11 @@ next_button.onclick = () => {
     showQuetions(question_count);
     questionCounter(question_number);
     clearInterval(counter);
-    clearInterval(counterLine);
     startTimer(timeValue);
     timeText.textContent = "Time";
     next_button.classList.remove("show");
   } else {
     clearInterval(counter);
-    clearInterval(counterLine);
     showResult();
   }
 };
@@ -228,9 +220,6 @@ restart_quiz.onclick = () => {
 quit_quiz.onclick = () => {
   window.location.reload();
 };
-
-let tickIconTag = '<div class="icon tick"><i class="fas fa-check"></i></div>';
-let crossIconTag = '<div class="icon cross"><i class="fas fa-times"></i></div>';
 
 function showResult() {
   quiz_box.classList.remove("showQuiz");

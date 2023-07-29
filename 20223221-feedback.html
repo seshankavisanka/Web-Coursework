@@ -7,7 +7,29 @@
     <link rel="stylesheet" href="20223221-style/feedbackStyle.css" />
   </head>
   <body>
-    <section class="feedback" id="feedback">
+    <header>
+       <a href="#" class="logo"><span>Go</span>Travelers</a>
+
+      <nav class="navbar">
+        <a href="20223221-index.html">Home </a>
+        <a href="20223282-Gallery.html">Gallery </a>
+        <a href="20223221-feedback.html">feedback </a>
+        <a href="20223282-sitemap.html">Site map </a>
+        <a href="20223290-quiz-index.html">Quiz</a>
+        <a href="20223290-about-us.html">About us </a>
+        <a href="#shop">Shop </a>
+      </nav>
+      <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+      </div>
+      <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="search here..." />
+        <label for="search-bar" class="fas fa-search"></label>
+      </form>
+    </header>
+    
+    <br><br>
+    <section class="feedback" id="feedbackForm">
       <div class="feedbak-header">
         <h1>
           <span>F</span>
@@ -24,10 +46,10 @@
       <div class="user-datils">
         <h2>Hello dear!!</h2>
         <label for="name">Name :</label>
-        <input type="text" placeholder="Enter your name " />
+        <input type="text" id="name" name="name" placeholder="Enter your name " required/>
         <br /><br />
         <label for="email">Email :</label>
-        <input type="email" placeholder="Enter your email " />
+        <input type="email" id="email" name="email" required placeholder="Enter your email "  />
         <br /><br />
         <label for="Country">From :</label>
         <input class="last" type="text" placeholder=" typr your Country " />
@@ -44,16 +66,16 @@
           <br />
           <table class="selct-feedback">
             <tr>
-              <td><input type="radio" name="choise" class="btn" /></td>
-              <td><input type="radio" name="choise" class="btn" /></td>
-              <td><input type="radio" name="choise" class="btn" /></td>
-              <td><input type="radio" name="choise" class="btn" /></td>
-              <td><input type="radio" name="choise" class="btn" /></td>
-              <td><input type="radio" name="choise" class="btn" /></td>
-              <td><input type="radio" name="choise" class="btn" /></td>
-              <td><input type="radio" name="choise" class="btn" /></td>
-              <td><input type="radio" name="choise" class="btn" /></td>
-              <td><input type="radio" name="choise" class="btn" /></td>
+              <td><input type="radio" id="rate" name="choise" class="btn" value="1" /></td>
+              <td><input type="radio" id="rate" name="choise" class="btn" value="2" /></td>
+              <td><input type="radio" id="rate" name="choise" class="btn" value="3" /></td>
+              <td><input type="radio" id="rate" name="choise" class="btn" value="4" /></td>
+              <td><input type="radio" id="rate" name="choise" class="btn" value="5" /></td>
+              <td><input type="radio" id="rate" name="choise" class="btn" value="6" /></td>
+              <td><input type="radio" id="rate" name="choise" class="btn" value="7" /></td>
+              <td><input type="radio" id="rate" name="choise" class="btn" value="8" /></td>
+              <td><input type="radio" id="rate" name="choise" class="btn" value="9" /></td>
+              <td><input type="radio" id="rate" name="choise" class="btn" value="10" /></td>
             </tr>
             <tr>
               <td><label for="too bad">1</label></td>
@@ -76,21 +98,16 @@
             please could you tell us your resasons for giving this rating?
           </h2>
           <br />
-          <textarea
-            name="msg"
-            id="user-comment"
-            cols="150"
-            rows="8"
-            required
-          ></textarea>
+          
+          <textarea name="comment"  id="comment" cols="150"  rows="8" required></textarea>
         </fieldset>
         <br />
         <fieldset class="f3">
-          <h2 for="options">
+          <h2 for="subject" >
             How did you want to comlete this task today?(optional)
           </h2>
           <br />
-          <select name="methord">
+          <select name="methord" class="p"  id="methord">
             <option value="" selected>--please select--</option>
             <option value="phone">phone</option>
             <option value="website">website</option>
@@ -117,9 +134,12 @@
         </fieldset>
         <br /><br />
         <div class="submit-btn">
-          <input type="submit" class="btn" />
+          <input type="submit" class="btn"  value="Submit"/>
         </div>
+
       </form>
+      <br><br>
+      <div id="successMessage" style="display: inline; font-size: 20px; background-color: rgb(0, 230, 115); padding-top: 10px; padding-bottom: 10px;"></div>
     </section>
     <div class="page-editor">
       <h6>
@@ -131,5 +151,6 @@
     <footer>
       <p>@ 2023 All Rights Reserved by GO Travelers, Sri Lanka Tourism</p>
     </footer>
+  <script src="20223221-javascript/feedBackScript.js"></script>  
   </body>
 </html>

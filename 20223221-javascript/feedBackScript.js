@@ -27,7 +27,12 @@ document.getElementById('feedbackForm').addEventListener('submit', function(even
   });
 
   function addErrorMessage(message) {
+    var showErrorMessage = document.getElementById('error-msg');
+    if (showErrorMessage) {
+      showErrorMessage.remove();
+    }
     var errorMessage = document.createElement('div');
+    errorMessage.id = 'error-msg';
     errorMessage.className = 'error';
     errorMessage.textContent = message;
     errorMessage.style.backgroundColor = "red";
@@ -38,9 +43,20 @@ document.getElementById('feedbackForm').addEventListener('submit', function(even
     errorMessage.style.borderRadius = "4px";
     document.getElementById('feedbackForm').appendChild(errorMessage);
   }
+  function removeErrorMessage(messageId) {
+  var errorMessage = document.getElementById(messageId);
+  if (errorMessage && errorMessage.parentNode) {
+    errorMessage.parentNode.removeChild(errorMessage);
+  }
+}
+
   
   function showSuccessMessage() {
     var successMessage = document.getElementById('successMessage');
+    var errorMessage = document.getElementById('error-msg');
+    if (errorMessage) {
+      errorMessage.remove();
+    }
     successMessage.style.display = 'block' ;
     successMessage.textContent = 'THANK YOU!!! Thanking you for taking time to give us your feedback on your experience today';
   }

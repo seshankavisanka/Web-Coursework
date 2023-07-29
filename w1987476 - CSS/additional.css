@@ -1,0 +1,97 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,500&family=Oswald:wght@200;300;500;600&family=Roboto+Slab:wght@200;300;400;600&display=swap');
+:root{
+    --green:#2abd5de7;
+}
+*::selection{
+    background: var(--green);
+    color: #ffff;
+}
+*{
+    font-family: 'Nunito', sans-serif;
+}
+header{
+    position: fixed;
+    top:0; left: 0; right: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 12px 12px 100px;
+    text-align: center;
+    background:linear-gradient(to right, rgb(46, 221, 215) , rgb(75, 204, 66));
+
+}
+header .logo{
+    font-size: 25px;
+    font-weight: bolder;
+    color: #ffff;
+    text-transform: capitalize;
+}
+header .logo span{
+    color: var(--green);
+}
+header a{
+    text-decoration: none;
+}
+header .navbar a{
+    color: #ffff;
+    font-size: 20px;
+    margin:0 .8rem; 
+    text-decoration: none;
+    text-align: center;
+    
+}
+header .navbar a:hover{
+    color: var(--green);
+}
+header .icons i{
+    font-size: 2.3rem;
+    color: #ffff;
+    cursor: pointer;
+    margin-right: 2rem;
+}
+header .icons i:hover{
+    color: var(--green);
+}
+
+header .search-bar-container{
+    position: absolute;
+    top: 100%; left: 0; right: 0;
+    padding: 1.5rem 2rem;
+    background: #333;
+    border-top: .1rem solid rgba(255, 255, 255, .2); 
+    display: flex;
+    align-items: center;  
+    z-index: 1001;
+    clip-path: polygon(0 0 , 100% 0 , 100% 0 , 0 0);
+}
+header .search-bar-container.active{
+    clip-path: polygon(0 0 , 100% 0 , 100% 100% , 0 100%);
+}
+header .search-bar-container #search-bar{
+    width: 100%;
+    padding: 8px;
+    text-transform: none;
+    color: #161616e1;
+    font-size: 20px;
+    border-radius:.5rem;
+}
+header .search-bar-container label{
+    font-size:3rem ;
+    color: #ffff;
+    cursor: pointer;
+    margin-left: 1.5rem;
+}
+header .search-bar-container label:hover{
+    color: var(--green);
+
+}
+#menu-bar{
+    color: #ffff;
+    border: .1rem solid #ffff;
+    border-radius: .5rem;
+    padding: .5rem 1.2rem;
+    cursor: pointer;
+    display: none;
+}

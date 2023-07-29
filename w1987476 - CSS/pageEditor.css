@@ -1,0 +1,21 @@
+*{
+    font-family: monospace;
+
+}
+h1{
+    background-color: #78ed72;
+    text-align: center;
+    
+}
+.intro{
+    text-align: center;
+    font-size: large;
+}
+.content{
+    text-align: center;
+    background-color: #78ed72;
+    font-size: large;
+}
+.content h5{
+    font-size: large;
+}

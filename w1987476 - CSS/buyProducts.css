@@ -132,9 +132,9 @@ span.price {
     margin-top: 50px;
 }
 .list .item{
-    text-align: center;
+    text-align: left;
     background-color: #DCE0E1;
-    padding: 20px;
+    padding: 10px;
     box-shadow: 0 50px 50px #757676;
     letter-spacing: 1px;
 }

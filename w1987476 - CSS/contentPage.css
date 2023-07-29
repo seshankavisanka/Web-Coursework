@@ -1,0 +1,87 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+body{
+    margin: 0px 50px 0px 50px;
+}
+#main-title{
+    margin-top: 80px;
+    text-align: center;
+    font-family: Quicksand;
+}
+
+.mainText{
+    position: relative;
+    color: #19dd39;
+    font-family: Quicksand;
+    font-size: 50px;
+    font-weight: bold;
+}
+.subText{
+    font-family: Quicksand;
+    font-size: 40px;
+    position: relative;
+    color: rgb(158, 210, 27);
+
+}
+.card{
+    width: 100%;
+    height: 300px;
+    border-radius: 50px;
+    transition: box-shadow 0.5s;
+    margin: 10px;
+    text-align: center;
+}
+#card1{
+    background-image: url('imgs/hikingBack.webp');
+}
+#card2{
+    background-image: url('imgs/Ella.jpg');
+    background-position: right ;
+}
+#card3{
+    background-image: url('imgs/hortainPlains.jpg');
+    background-size: cover;
+}
+
+.card:hover{
+    box-shadow: 2px 3px 5px;
+}
+
+.end{
+    transform: translate(100px,100px);
+}
+
+.collapsible{
+    color: blanchedalmond;
+    font-family: Quicksand;
+    font-size: 40px;
+    width: 0px;
+    background-color: transparent;
+    border: 0px;
+    border-radius: 20px;
+    transition: width 1s;
+    padding: 2px;
+}
+.collapsible:hover{
+    width:200px ;
+    border: 2px solid white;
+}
+
+.content{
+    margin: 2px;
+    display: none;
+    padding: 10px;
+    font-family: Quicksand;
+    font-size: 20px;
+    text-align: justify;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.6s     ;
+    border-radius: 50px;
+    box-shadow: 1px 2px 3px;
+}
+p span{
+    font-weight: bold;
+    text-decoration: underline ;
+}

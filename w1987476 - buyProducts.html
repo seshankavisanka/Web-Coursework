@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Buy Products</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="w1987476 - CSS/additional.css">
+    <link rel="stylesheet" href="w1987476 - CSS/buyProducts.css">
+</head>
+
+<body>
+    <header>
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <a href="20223221-index.html" class="logo"><span>Go </span>Travelers</a>
+
+        <nav class="navbar">
+            <a href="20223221-index.html">Home </a>
+            <a href="20223282-Gallery.html">Gallery </a>
+            <a href="20223221-feedback.html">feedback </a>
+            <a href="20223282-sitemap.html">Site map </a>
+            <a href="20223290-quiz-index.html">Quize </a>
+            <a href="20223290-about-us.html">Abut us </a>
+            <a href="w1987476 - buyProducts.html">Shop </a>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn" style="font-size: 25px;"></i>
+        </div>
+        <form action="#" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search here...">
+            <label for="search-bar" class="fas fa-search" style="font-size: 25px;"></label>
+        </form>
+    </header>
+
+    <div class="cart">
+        <img src="w1987476 - imgs/cart.png" alt="cart.png">
+        <span class="quantity" style="color: black;">0</span>
+    </div>
+    <div id="container1" style="margin-top: 100px;">
+        <div class="category-title">
+            <h1>Srilankan Traditional Deamon Masks</h1>
+        </div>
+        <table>
+            <tr>
+                <td>
+                    <div class="product" id="fireDeamon">
+                        <h2 class="product-title">Fire Deamon</h2>
+                        <img class="product-img" src="w1987476 - imgs/deamons/flameDeamon.png" alt="img">
+                        <div class="product-price">&#163;450</div>
+                        <div class="product-action">
+                            <a href="w1987476 - checkout.html" class="btn" onclick="checkOut(0)">Buy</a>
+                            <button type="button" class="btn" onclick="addToCard(0)">Add to Cart</button>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="product" id="deamons/cobra">
+                        <h2 class="product-title">Cobra Deamon</h2>
+                        <img class="product-img" src="w1987476 - imgs/deamons/cobraDeamon.png" alt="img">
+                        <div class="product-price">&#163;450</div>
+                        <div class="product-action">
+                            <a href="w1987476 - checkout.html" class="btn" onclick="checkOut(1)">Buy</a>
+                            <button type="button" class="btn" onclick="addToCard(1)">Add to Cart</button>
+                        </div>
+                    </div>
+                </td>
+                <td>           
+                    <div class="product" id="peacockDeamon">
+                        <h2 class="product-title">Peacock Deamon</h2>
+                        <img class="product-img" src="w1987476 - imgs/deamons/peacockDeamon.png" alt="img">
+                        <div class="product-price">&#163;450</div>
+                        <div class="product-action">
+                            <a href="w1987476 - checkout.html" class="btn" onclick="checkOut(2)">Buy</a>
+                            <button type="button" class="btn" onclick="addToCard(2)">Add to Cart</button>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="product" id="gurulaDeamon">
+                        <h2 class="product-title">Gurula Deamon</h2>
+                        <img class="product-img" src="w1987476 - imgs/deamons/gurulaMayuraDeamon.png" alt="img">
+                        <div class="product-price">&#163;450</div>
+                        <div class="product-action">
+                            <a href="w1987476 - checkout.html" class="btn" onclick="checkOut(3)">Buy</a>
+                            <button type="button" class="btn" onclick="addToCard(3)">Add to Cart</button>
+                        </div>
+                    </div>
+                </td>    
+            </tr>
+     
+        </table>
+        
+    </div>
+    <div id="container2">
+        <div class="category-title">
+            <h1>Srilankan Traditional Coconut Crafts</h1>
+        </div>
+        <table>
+            <tr>
+                <td>
+                    <div class="product">
+                        <h2 class="product-title">Coconut Tea <br>Cups</h2>
+                        <img class="product-img" src="w1987476 - imgs/coconutCrafts/coconutTeaCups.jpg" alt="img">
+                        <div class="product-price">&#163;450</div>
+                      
+                        <div class="product-action">
+                            <a href="w1987476 - checkout.html" class="btn" onclick="checkOut(4)">Buy</a>
+                            <button type="button" class="btn" onclick="addToCard(4)">Add to Cart</button>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="product">
+                        <h2 class="product-title">Coconut Shell Spoons</h2>
+                        <img class="product-img" src="w1987476 - imgs/coconutCrafts/coconutShellsSpoons.avif" alt="img">
+                        <div class="product-price">&#163;450</div>
+                       
+                        <div class="product-action">
+                            <a href="w1987476 - checkout.html" class="btn" onclick="checkOut(5)">Buy</a>
+                            <button type="button" class="btn" onclick="addToCard(5)">Add to Cart</button>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="product">
+                        <h2 class="product-title">Coconut Leaf Baskets</h2>
+                        <img class="product-img" src="w1987476 - imgs/coconutCrafts/coconutLeafBaskets.avif" alt="img">
+                        <div class="product-price">&#163;450</div>
+                       
+                        <div class="product-action">
+                            <a href="w1987476 - checkout.html" class="btn" onclick="checkOut(6)">Buy</a>
+                            <button type="button" class="btn" onclick="addToCard(6)">Add to Cart</button>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="product">
+                        <h2 class="product-title">Coconut Bamboo Stick</h2>
+                        <img class="product-img" src="w1987476 - imgs/coconutCrafts/coconutBroom.avif" alt="img">
+                        <div class="product-price">&#163;450</div>
+                    
+                        <div class="product-action">
+                            <a href="w1987476 - checkout.html" class="btn" onclick="checkOut(7)">Buy</a>
+                            <button type="button" class="btn" onclick="addToCard(7)">Add to Cart</button>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    
+    <div id="container3">
+        <div class="category-title">
+            <h1>Srilankan Wall Arts</h1>
+        </div>
+        <table>
+            <tr>
+                <td>
+                    <div class="product wallArts">
+                        <h2 class="product-title">Sri Lanka Map</h2>
+                        <img class="product-img" src="w1987476 - imgs/wallArts/wallArt1.webp" alt="img">
+                        <div class="product-price">&#163;450</div>
+                    
+                        <div class="product-action">
+                            <a href="w1987476 - checkout.html" class="btn" onclick="checkOut(8)">Buy</a>
+                            <button type="button" class="btn" onclick="addToCard(8)">Add to Cart</button>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="product wallArts">
+                        <h2 class="product-title">Galle, Sri Lanka  </h2>
+                        <img class="product-img" src="w1987476 - imgs/wallArts/galle.webp" alt="img">
+                        <div class="product-price">&#163;450</div>
+                        
+                        <div class="product-action">
+                            <a href="w1987476 - checkout.html" class="btn" onclick="checkOut(9)">Buy</a>
+                            <button type="button" class="btn" onclick="addToCard(9)">Add to Cart</button>
+                        </div>
+                    </div>
+                </td>
+                <td>   
+                    <div class="product wallArts">
+                        <h2 class="product-title">Sri Lanka Poster</h2>
+                        <img class="product-img" src="w1987476 - imgs/wallArts/srilanka.webp" alt="img">
+                        <div class="product-price">&#163;450</div>
+                        <div class="product-action">
+                            <a href="w1987476 - checkout.html" class="btn" onclick="checkOut(10)">Buy</a>
+                            <button type="button" class="btn" onclick="addToCard(10)">Add to Cart</button>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="product wallArts">
+                        <h2 class="product-title">Sigiriya, Sri Lanka</h2>
+                        <img class="product-img" src="w1987476 - imgs/wallArts/sigiriya.webp" alt="img">
+                        <div class="product-price">&#163;450</div>
+                        <div class="product-action">
+                            <a href="w1987476 - checkout.html" class="btn" onclick="checkOut(11)">Buy</a>
+                            <button type="button" class="btn" onclick="addToCard(11)">Add to Cart</button>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <div class="list"></div>
+    </div>
+    <div class="card">
+        <h1>Card</h1>
+        <ul class="listCard">
+        </ul>
+        <div class="checkOut">
+            <a href="w1987476 - checkout.html"><div class="total" onclick="checkOutCart()">0</div></a>
+            <div class="closeShopping">Close</div>
+        </div>
+    </div>
+    <script src="w1987476 - JS/additional.js"></script>
+    <script src="w1987476 - JS/buyProducts.js"></script>
+</body>
+
+</html>

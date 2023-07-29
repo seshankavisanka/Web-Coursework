@@ -1,7 +1,7 @@
 /* set body element as a block and apply background  */
 body {
   display: block;
-  background-image: url(image/map.jpg);
+  background-image: url(../20223282-Images/map.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
